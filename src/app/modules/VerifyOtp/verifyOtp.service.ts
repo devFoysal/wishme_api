@@ -1,5 +1,6 @@
 import { SendNumberOtp } from '@prisma/client';
 import { ExpireTime, RandomNumber } from '../../../helpers';
+import { SEND_SMS } from '../../../helpers/smsSender';
 import prisma from '../../../shared/prisma';
 
 const sendNumberOtp = async (props: SendNumberOtp) => {
@@ -16,10 +17,20 @@ const sendNumberOtp = async (props: SendNumberOtp) => {
     data: data,
   });
 
+  // Send SMS
+  const smsMessage = `Wish Me: Your OTP is ${data.otp}. Use it to verify you phone  number. Expire in 2 minutes.`;
+  await SEND_SMS(data.mobile, smsMessage);
+
   return res;
 };
 
-const verificationOtp = async (props: any) => {
+// git config --global user.name "Md-Yousuf-Sheikh"
+//     git config --global user.email sheikhyousuf702@gmail.com
+
+const verificationOtp = async (props: {
+  otp: string | number;
+  mobile: string;
+}) => {
   // database
   const res = await prisma.sendNumberOtp.findFirst({
     where: {

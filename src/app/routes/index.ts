@@ -1,6 +1,7 @@
 import express from 'express';
 import { UserRoutes } from '../modules/User/user.routes';
 import { VerifyOtpRoutes } from '../modules/VerifyOtp/verifyOtp.routes';
+import { WishesRoutes } from '../modules/Wishes/wishes.routes';
 
 const router = express.Router();
 
@@ -16,6 +17,10 @@ const moduleRoutes = [
   {
     path: '/otp',
     route: VerifyOtpRoutes,
+  },
+  {
+    path: '/wishes',
+    route: WishesRoutes,
   },
 ];
 

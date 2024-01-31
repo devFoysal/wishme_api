@@ -14,6 +14,11 @@ enum UserStatus {
   inactive
 }
 
+enum WisheType {
+  mobile
+  app
+}
+
 model User {
   id String @id @default(uuid())
 
@@ -45,4 +50,19 @@ model SendNumberOtp {
   updated_at DateTime @updatedAt
 
   @@map("send_number_otps")
+}
+
+model Wish {
+  id String @id @default(uuid())
+
+  receiver_name String
+  mobile        String
+  message       String
+  wish_type     WisheType
+  schedule_date String
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("wishes")
 }

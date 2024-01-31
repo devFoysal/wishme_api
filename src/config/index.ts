@@ -6,6 +6,8 @@ dotenv.config({ path: path.join(process.cwd(), '.env') });
 
 export default {
   env: process.env.NODE_ENV,
+  sms_user: process.env.SMS_USER,
+  sms_pass: process.env.SMS_PASS,
   port: process.env.PORT,
   database_url: process.env.DATABASE_URL,
   default_student_pass: process.env.DEFAULT_STUDENT_PASS,
