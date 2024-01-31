@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/.ff42a59dfd23ae97762bd779fe2f76ddb533a867-audit.json",
+    "files": [
+        {
+            "date": 1706678474314,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-31-01-11-success.log",
+            "hash": "77101c0f2daa1407500b853d4bcd24fb8995c6157f68c162e4b6a0fbf53c5340"
+        },
+        {
+            "date": 1706683075503,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-31-01-12-success.log",
+            "hash": "9176ddcca2641f3a90e2508ff5d8ad4f4acbb03552d5dfcda47cfc76b02343f2"
+        },
+        {
+            "date": 1706684479002,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-31-01-13-success.log",
+            "hash": "e4c2a0fc387d9b533aea88d62d0080c3401ddcacba023e72913d3b199bb1195e"
+        }
+    ],
+    "hashType": "sha256"
+}

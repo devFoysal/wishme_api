@@ -1,12 +1,17 @@
 import express from 'express';
-import { AcademicSemesterRoutes } from '../modules/AcademicSemester/academicSemester.routes';
+import { UserRoutes } from '../modules/User/user.routes';
+import { VerifyOtpRoutes } from '../modules/VerifyOtp/verifyOtp.routes';
 
 const router = express.Router();
 
 const moduleRoutes = [
   {
-    path: '/academic-semesters',
-    route: AcademicSemesterRoutes,
+    path: '/user',
+    route: UserRoutes,
+  },
+  {
+    path: '/otp',
+    route: VerifyOtpRoutes,
   },
 ];
 

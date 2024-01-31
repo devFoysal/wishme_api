@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/errors/.b4b9943d4762abeb36cbefccf2d5ede01612ea2d-audit.json",
+    "files": [
+        {
+            "date": 1706678474315,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/errors/phu-2024-31-01-11-error.log",
+            "hash": "72f0ab47cf45fa89f91f10340927b87994fb450193671ff348f74f6bf07f2ec9"
+        },
+        {
+            "date": 1706683075504,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/errors/phu-2024-31-01-12-error.log",
+            "hash": "f1959052e8fb29fcadc4b224e2efa0e6c08d726a5fa58a9bd7698a73f26d3bc2"
+        },
+        {
+            "date": 1706684479205,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/errors/phu-2024-31-01-13-error.log",
+            "hash": "73fdff68527982beb66af8fb53805d640bb3636cdc18a4db829c52748ba27a6c"
+        }
+    ],
+    "hashType": "sha256"
+}
