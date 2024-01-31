@@ -5,9 +5,14 @@ import { VerifyOtpValidation } from './verifyOtp.validation';
 const router = express.Router();
 
 router.post(
-  '/',
-  validateRequest(VerifyOtpValidation.create),
-  VerifyOtpController.insertIntoDb
+  '/send',
+  validateRequest(VerifyOtpValidation.sendOtp),
+  VerifyOtpController.sendNumberOtp
+);
+router.post(
+  '/verify',
+  validateRequest(VerifyOtpValidation.verifyOtp),
+  VerifyOtpController.verificationOtp
 );
 
 export const VerifyOtpRoutes = router;

@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\BTL\\wish-me-server\\logs\\winston\\successes\\.313616b180180a348cbe0b47422907e93a41921b-audit.json",
+    "files": [
+        {
+            "date": 1706688475436,
+            "name": "D:\\BTL\\wish-me-server\\logs\\winston\\successes\\phu-2024-31-01-14-success.log",
+            "hash": "e5408252ab7e4afb839b90616ef7e67f42f019c06b1f60b9ff6bd3966182327b"
+        }
+    ],
+    "hashType": "sha256"
+}
