@@ -10,6 +10,10 @@ const moduleRoutes = [
     route: UserRoutes,
   },
   {
+    path: '/auth',
+    route: UserRoutes,
+  },
+  {
     path: '/otp',
     route: VerifyOtpRoutes,
   },
