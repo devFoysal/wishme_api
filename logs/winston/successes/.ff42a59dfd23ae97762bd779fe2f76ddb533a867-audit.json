@@ -29,6 +29,11 @@
             "date": 1706738481008,
             "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-01-02-04-success.log",
             "hash": "5786cf98945009d31459e42ece51d05c705422233f43154c6afcb7819bbb111a"
+        },
+        {
+            "date": 1706742048158,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-01-02-05-success.log",
+            "hash": "272932fc3630fbaf3eb013cb2710bb9812186b6fbe027d84814044f64ce1f801"
         }
     ],
     "hashType": "sha256"

@@ -3,7 +3,7 @@ import { Secret } from 'jsonwebtoken';
 
 import httpStatus from 'http-status';
 import config from '../../../config';
-import { ExpireTime, RandomNumber } from '../../../helpers';
+import { isCurrentTimeMatch, isExpireTime, isRandomNumber } from '../../../helpers';
 import {
   isUserPasswordConvertBcrypt,
   isUserPasswordMatch,
@@ -167,14 +167,15 @@ const loginUser = async (props: User): Promise<IApiResponse<Partial<User>>> => {
 };
 //  send otp
 const sendOtp = async (props: SendNumberOtp) => {
-  const otp = RandomNumber(5);
-  const expireTime = ExpireTime();
+  const otp = isRandomNumber(5);
+  const expireTime = isExpireTime();
 
   const data = {
     mobile: props?.mobile,
     otp: otp,
-    expire_time: `${expireTime}`,
+    expire_time: expireTime,
   };
+  
   // database
   const res = await prisma.sendNumberOtp.create({
     data: data,
@@ -204,9 +205,11 @@ const verifyOtp = async (props: IVerifyOtpProps) => {
   });
 
   if (res) {
+    const isTimerExpire =  isCurrentTimeMatch(res?.expire_time)
+  
     if (
       res?.mobile === props?.mobile &&
-      Number(res?.otp) === Number(props?.otp)
+      Number(res?.otp) === Number(props?.otp)&&isTimerExpire
     ) {
       //  delete otp
       await prisma.sendNumberOtp.delete({
