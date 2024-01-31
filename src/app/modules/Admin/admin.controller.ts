@@ -1,23 +1,21 @@
 // import { User } from '@prisma/client';
 // import { NextFunction, Request, Response } from 'express';
 // import sendResponse, { IApiResponse } from '../../../shared/sendResponse';
-// import { UserService } from './user.service';
 
-// const loginUser = async (req: Request, res: Response, next: NextFunction) => {
+// const createAdmin = async (req: Request, res: Response, next: NextFunction) => {
 //   try {
-//     const result = await UserService.loginUser(req?.body) as unknown as IApiResponse<Partial<User>>
+//     const result = await AuthService.createUser(req?.body) as unknown  as IApiResponse<Partial<User>>
 //     sendResponse<Partial<User>>(res, {
 //       statusCode: result?.statusCode,
 //       success: result?.success,
 //       message: result?.message,
-//       data: result?.data,
+//       data: result?.data 
 //     });
 //   } catch (error) {
 //     next(error);
 //   }
 // };
 
-
-// export const UserController = {
-//   loginUser,
+// export const AuthController = {
+//   createAdmin
 // };

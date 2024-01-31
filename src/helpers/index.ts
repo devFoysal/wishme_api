@@ -1,7 +1,9 @@
 export const RandomNumber = (length = 4): number => {
-  console.log('length', length);
-  return Math.floor(1000 + Math.random() * 9000);
+  const minValue = Math.pow(10, length - 1);
+  const maxValue = Math.pow(10, length) - 1;
+  return Math.floor(minValue + Math.random() * (maxValue - minValue + 1));
 };
+
 
 export const ExpireTime = () => {
   const date = new Date();

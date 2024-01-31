@@ -19,6 +19,16 @@
             "date": 1706684479205,
             "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/errors/phu-2024-31-01-13-error.log",
             "hash": "73fdff68527982beb66af8fb53805d640bb3636cdc18a4db829c52748ba27a6c"
+        },
+        {
+            "date": 1706737746786,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/errors/phu-2024-01-02-03-error.log",
+            "hash": "acc47dd183250f294023ffab467a6d49515d81c96cc3e57f9c108b6eddfa3ee8"
+        },
+        {
+            "date": 1706738481275,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/errors/phu-2024-01-02-04-error.log",
+            "hash": "8ebdc9ab754e92886e94421b0ef8e20d2d8c3ac47b56523ff501272d466d0fd2"
         }
     ],
     "hashType": "sha256"

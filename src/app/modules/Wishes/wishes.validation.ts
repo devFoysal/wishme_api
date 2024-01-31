@@ -1,12 +1,6 @@
 import { z } from 'zod';
 
-const sendOtp = z.object({
-  body: z.object({
-    mobile: z.string({
-      required_error: 'Mobile number is required',
-    }),
-  }),
-});
+
 const createWishes = z.object({
   body: z.object({
     receiver_name: z.string({
@@ -28,6 +22,5 @@ const createWishes = z.object({
 });
 
 export const WishesValidation = {
-  sendOtp,
   createWishes,
 };

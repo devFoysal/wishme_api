@@ -1,22 +1,13 @@
 import express from 'express';
-import { UserRoutes } from '../modules/User/user.routes';
-import { VerifyOtpRoutes } from '../modules/VerifyOtp/verifyOtp.routes';
+import { AuthRoutes } from '../modules/Auth/auth.routes';
 import { WishesRoutes } from '../modules/Wishes/wishes.routes';
 
 const router = express.Router();
 
 const moduleRoutes = [
   {
-    path: '/user',
-    route: UserRoutes,
-  },
-  {
     path: '/auth',
-    route: UserRoutes,
-  },
-  {
-    path: '/otp',
-    route: VerifyOtpRoutes,
+    route: AuthRoutes,
   },
   {
     path: '/wishes',
