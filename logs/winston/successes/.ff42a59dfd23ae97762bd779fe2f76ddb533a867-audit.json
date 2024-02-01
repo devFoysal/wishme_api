@@ -19,6 +19,36 @@
             "date": 1706684479002,
             "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-31-01-13-success.log",
             "hash": "e4c2a0fc387d9b533aea88d62d0080c3401ddcacba023e72913d3b199bb1195e"
+        },
+        {
+            "date": 1706737746784,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-01-02-03-success.log",
+            "hash": "4885ca504986024709f1c93636189b4e3502fe7ff5ac56b8c2bec754285a3519"
+        },
+        {
+            "date": 1706738481008,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-01-02-04-success.log",
+            "hash": "5786cf98945009d31459e42ece51d05c705422233f43154c6afcb7819bbb111a"
+        },
+        {
+            "date": 1706742048158,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-01-02-05-success.log",
+            "hash": "272932fc3630fbaf3eb013cb2710bb9812186b6fbe027d84814044f64ce1f801"
+        },
+        {
+            "date": 1706763325534,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-01-02-10-success.log",
+            "hash": "a6757fd6942e3a4295cb901d46c0fa8f96dd4cb1e6b6511058b8d78f3549f6cc"
+        },
+        {
+            "date": 1706763643738,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-01-02-11-success.log",
+            "hash": "83a89f876cfa1613cb31dbb3d4815321d60285fe06df1c68a576a29412536fc9"
+        },
+        {
+            "date": 1706767330962,
+            "name": "/Users/mdyousufsheikh/Documents/Projects/wish-me-server/logs/winston/successes/phu-2024-01-02-12-success.log",
+            "hash": "9f6287cfccc345885bff50dd004a5cbeacb725845a3cdc7258b5682079bc0a22"
         }
     ],
     "hashType": "sha256"

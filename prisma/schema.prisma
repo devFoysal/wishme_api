@@ -14,18 +14,25 @@ enum UserStatus {
   inactive
 }
 
+enum WisheType {
+  mobile
+  app
+}
+
 model User {
   id String @id @default(uuid())
 
   full_name                String?
   status                   UserStatus @default(inactive)
   work_status              String?
-  roll                     String     @default("customer")
-  mobile                   String @unique()
+  role                     String     @default("customer")
+  mobile                   String     @unique()
   password                 String
-  email                    String? @unique()
+  email                    String?    @unique()
   profile_image            String?
   is_phone_number_verified Boolean    @default(false)
+  refresh_token            String?
+  access_token             String?
 
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
@@ -34,7 +41,7 @@ model User {
 }
 
 model SendNumberOtp {
-  id          String  @id @default(uuid())
+  id          String @id @default(uuid())
   mobile      String
   otp         Int
   expire_time String
@@ -43,4 +50,19 @@ model SendNumberOtp {
   updated_at DateTime @updatedAt
 
   @@map("send_number_otps")
+}
+
+model Wish {
+  id String @id @default(uuid())
+
+  receiver_name String
+  mobile        String
+  message       String
+  wish_type     WisheType
+  schedule_date String
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("wishes")
 }
