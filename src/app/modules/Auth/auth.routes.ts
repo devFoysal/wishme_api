@@ -15,6 +15,11 @@ router.post(
   AuthController.createUser
 );
 router.post(
+  '/profile-update',
+  validateRequest(AuthValidation.updateUser),
+  AuthController.updateUser
+);
+router.post(
   '/login',
   validateRequest(AuthValidation.loginUser),
   AuthController.loginUser
@@ -28,6 +33,22 @@ router.post(
   '/verify-otp',
   validateRequest(AuthValidation.verifyOtp),
   AuthController.verifyOtp
+);
+router.post(
+  '/forget-password',
+  validateRequest(AuthValidation.forgetPassword),
+  AuthController.forgetPassword
+);
+router.post(
+  '/reset-password',
+  validateRequest(AuthValidation.resetPassword),
+  AuthController.resetPassword
+);
+
+router.post(
+  '/reset-password',
+  validateRequest(AuthValidation.resetPassword),
+  AuthController.resetPassword
 );
 
 export const AuthRoutes = router;

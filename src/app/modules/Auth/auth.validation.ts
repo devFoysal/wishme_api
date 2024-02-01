@@ -11,6 +11,14 @@ const createUser = z.object({
   }),
 });
 
+const updateUser = z.object({
+  body: z.object({
+    full_name: z.string().optional(),
+    profile_image: z.string().optional(),
+    work_status: z.string().optional(),
+  }),
+});
+
 const createAdmin = z.object({
   body: z.object({
     mobile: z.string({
@@ -52,10 +60,32 @@ const verifyOtp = z.object({
   }),
 });
 
+const forgetPassword = z.object({
+  body: z.object({
+    mobile: z.string({
+      required_error: 'Mobile number is required',
+    }),
+  }),
+});
+
+const resetPassword = z.object({
+  body: z.object({
+    mobile: z.string({
+      required_error: 'Mobile number is required',
+    }),
+    password: z.string({
+      required_error: 'Password is required',
+    }),
+  }),
+});
+
 export const AuthValidation = {
   createUser,
   loginUser,
   createAdmin,
   sendOtp,
-  verifyOtp
+  verifyOtp,
+  forgetPassword,
+  resetPassword,
+  updateUser
 };

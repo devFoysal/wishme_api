@@ -5,3 +5,5 @@ export type IVerifyOtpProps = {
   otp: string | number;
   mobile: string;
 };
+
+
