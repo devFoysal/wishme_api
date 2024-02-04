@@ -3,3 +3,40 @@ node_modules
 .todo
 logs/winston
 *.zip
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+wish_me_admin/node_modules
+wish_me_admin/.pnp
+wish_me_admin/.pnp.js
+wish_me_admin/.yarn/install-state.gz
+
+# testing
+wish_me_admin/coverage
+
+# next.js
+wish_me_admin/.next/
+wish_me_admin/out/
+
+# production
+wish_me_admin/build
+
+# misc
+wish_me_admin/.DS_Store
+wish_me_admin/*.pem
+
+# debug
+wish_me_admin/npm-debug.log*
+wish_me_admin/yarn-debug.log*
+wish_me_admin/yarn-error.log*
+
+# local env files
+wish_me_admin/.env*.local
+
+# vercel
+wish_me_admin/.vercel
+
+# typescript
+wish_me_admin/*.tsbuildinfo
+wish_me_admin/next-env.d.ts
